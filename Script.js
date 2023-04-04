@@ -351,10 +351,10 @@ for (let i = 0; i < Items.length; i++) {
         light.style.background = "none"
     })
 
-    // let scrollDirect = document.createElement("a") //scroll时的smooth effect (未完成)
-    // scrollDirect.href = "#" + imgs.id
-    // console.log(scrollDirect.href)
-    // placeHolder.append(scrollDirect)    
+    let scrollDirect = document.createElement("a") //scroll时的smooth effect (未完成)
+    scrollDirect.href = "#" + imgs.id
+    console.log(scrollDirect.href)
+    placeHolder.append(scrollDirect)    
 
     placeHolder.append(imgs)
     placeHolder.append(name)
