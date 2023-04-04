@@ -69,9 +69,9 @@ h3 {
     }
 }
 
-@media (max-width: 700px){
-    img {
-        width: 200px;
+@media (max-width: 800px){
+    #HOLDER{
+        flex-wrap: wrap-reverse;
     }
 }
 

@@ -350,10 +350,10 @@ for (let i = 0; i < Items.length; i++) {
         light.style.background = "none"
     })
 
-    let scrollDirect = document.createElement("a") //scroll时的smooth effect (未完成)
-    scrollDirect.href = "#" + imgs.id
-    console.log(scrollDirect.href)
-    placeHolder.append(scrollDirect)    
+    // let scrollDirect = document.createElement("a") //scroll时的smooth effect (未完成)
+    // scrollDirect.href = "#" + imgs.id
+    // console.log(scrollDirect.href)
+    // placeHolder.append(scrollDirect)    
 
     placeHolder.append(imgs)
     placeHolder.append(name)
@@ -469,11 +469,14 @@ for (let k = 0; k < Items.length; k++) {
             }
         }
 
-        holder.style.float = "left" //点击图片后图片和说明内容各占一半
-        holder.style.width = "50%"
+        // holder.style.float = "left" //点击图片后图片和说明内容各占一半
+        // holder.style.width = "50%"
 
-        holder2.style.float = "right"
-        holder2.style.width = "40%"
+        // holder2.style.float = "right"
+        holder2.style.width = "1000px"
+        holder2.style.marginRight = "15vw"
+
+        holder.style.marginRight = "5vw"
 
         holder.style.height = "1500px"
         holder.style.overflowY = "scroll" //点开图片后可以上下滑动
@@ -498,5 +501,5 @@ window.addEventListener('scroll', function () {
 });
 
 if (window.matchMedia("(max-width: 700px)").matches) {
-    document.getElementsByTagName("img").style.width= "200px"
+    document.getElementsByTagName("img").style.width = "200px"
 }
