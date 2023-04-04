@@ -1,0 +1,111 @@
+body {
+    background-color: #5d4b36;
+}
+
+@font-face {
+    font-family: FolioB;
+    src: url(folio/Folio-Bold.otf);
+}
+
+@font-face {
+    font-family: FolioBC;
+    src: url(folio/Folio-BoldCondensed.otf);
+}
+
+div {
+    flex-grow: 1;
+}
+
+#intro img {
+    width: 100%;
+    height: 100vh;
+    flex-grow: 1;
+}
+
+hr {
+    width: 95%;
+    border: 0.24vh solid rgb(0, 0, 0);
+    margin-top: 4vh;
+}
+
+/* #mask1 {
+    
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+} */
+
+#holder {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: antiquewhite; */
+    text-align: center;
+}
+
+#titleLight {
+    flex-grow: 1;
+    width: 100%;
+    height: 100vh;
+}
+
+h2 {
+    font-family: FolioBC, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5vw;
+    cursor: pointer;
+}
+
+h3 {
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5vw;
+    padding-top: 4vh;
+}
+
+@media (min-width: 1285px) {
+    #introP {
+        padding-top: 10vh;
+    }
+}
+
+@media (max-width: 700px){
+    img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    #intro {
+        width: 90%;
+    }
+
+    #introP {
+        width: 90%;
+    }
+}
+
+#holder2 {
+    background: url(light3.png);
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+
+
+/* 创建表格主页下拉后材料渐变出现效果 */
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+}
