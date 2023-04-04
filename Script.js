@@ -443,6 +443,29 @@ for (let j = 0; j < Items.length; j++) {
     holder2.style.display = "none" //在没点击图片时隐藏说明部分
 }
 
+let hideSelect = document.createElement("div") //holder2隐藏按钮
+hideSelect.innerHTML = "BACK"
+hideSelect.style.fontFamily = "FolioBC, sans-serif"
+hideSelect.style.fontSize = "2vw"
+hideSelect.style.color = "black"
+hideSelect.style.marginTop = "5vh"
+hideSelect.style.marginBottom = "4vh"
+
+hideSelect.addEventListener("mouseover", () => {
+    hideSelect.style.cursor = "pointer"
+    hideSelect.style.color = "#f6e7c7"
+})
+
+hideSelect.addEventListener("mouseout", () => {
+    hideSelect.style.color = "black"
+})
+
+hideSelect.addEventListener("click", () => {
+    holder2.style.display = "none"
+})
+
+holder2.append(hideSelect)
+
 for (let k = 0; k < Items.length; k++) {
     let imgsSelect = document.getElementById(k) //图片id的变量
     console.log(imgsSelect.id)
@@ -450,7 +473,6 @@ for (let k = 0; k < Items.length; k++) {
     imgsSelect.addEventListener("click", () => {//读取被点击图片的id 
 
         holder2.style.display = "block"
-        mask1.style.maskImage = "black"
 
         for (let l = 0; l < Items.length; l++) {
             if (l != imgsSelect.id) {
@@ -475,8 +497,11 @@ for (let k = 0; k < Items.length; k++) {
 
         holder2.style.width = "1000px"
         holder2.style.marginRight = "15vw"
-
         holder.style.marginRight = "5vw"
+
+        if (window.matchMedia("(max-width: 700px)").matches) {
+            holder2.style.marginLeft = "15vw"
+        }
 
         holder.style.height = "1300px"
         holder.style.overflowY = "scroll" //点开图片后可以上下滑动
