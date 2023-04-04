@@ -469,18 +469,16 @@ for (let k = 0; k < Items.length; k++) {
             }
         }
 
-        // holder.style.float = "left" //点击图片后图片和说明内容各占一半
-        // holder.style.width = "50%"
-
-        // holder2.style.float = "right"
         holder2.style.width = "1000px"
         holder2.style.marginRight = "15vw"
 
         holder.style.marginRight = "5vw"
 
-        holder.style.height = "1500px"
+        holder.style.height = "1300px"
         holder.style.overflowY = "scroll" //点开图片后可以上下滑动
         holder.style.scrollBehavior = "smooth"
+
+        
     })
 }
 
