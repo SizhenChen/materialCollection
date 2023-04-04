@@ -333,6 +333,7 @@ for (let i = 0; i < Items.length; i++) {
     name.style.display = "none"
 
     let light = document.createElement("div") //hover时包裹住材料的光
+    light.id = "light" + i
 
     imgs.addEventListener("mouseover", () => { //hover时图片发光，Name出现
         name.style.display = "block"
@@ -459,6 +460,7 @@ for (let k = 0; k < Items.length; k++) {
                 document.getElementById("Techniques" + l).style.display = "none"
                 document.getElementById("Art" + l).style.display = "none"
                 document.getElementById("ArtDescription" + l).style.display = "none"
+                document.getElementById("light" + l).display = "none"
             } else {
                 document.getElementById("Is" + l).style.display = "block"
                 document.getElementById("Properties" + l).style.display = "block"
@@ -466,6 +468,8 @@ for (let k = 0; k < Items.length; k++) {
                 document.getElementById("Techniques" + l).style.display = "block"
                 document.getElementById("Art" + l).style.display = "block"
                 document.getElementById("ArtDescription" + l).style.display = "block"
+                document.getElementById("light" + l).style.background = "url(light2.png)"
+                document.getElementById("light" + l).style.backgroundSize = "100% 100%"
             }
         }
 
@@ -478,7 +482,7 @@ for (let k = 0; k < Items.length; k++) {
         holder.style.overflowY = "scroll" //点开图片后可以上下滑动
         holder.style.scrollBehavior = "smooth"
 
-        
+
     })
 }
 
