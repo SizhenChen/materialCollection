@@ -432,12 +432,12 @@ for (let j = 0; j < Items.length; j++) {
     sec5.append(art)
     sec6.append(artDescription)
 
+    placeHolder2.append(sec5)
+    placeHolder2.append(sec6)
     placeHolder2.append(sec1)
     placeHolder2.append(sec2)
     placeHolder2.append(sec3)
     placeHolder2.append(sec4)
-    placeHolder2.append(sec5)
-    placeHolder2.append(sec6)
 
     holder2.append(placeHolder2)
     holder2.style.display = "none" //在没点击图片时隐藏说明部分
