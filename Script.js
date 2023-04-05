@@ -503,7 +503,7 @@ for (let k = 0; k < Items.length; k++) {
             holder2.style.marginLeft = "15vw"
         }
 
-        holder.style.height = "1300px"
+        holder.style.height = "1900px"
         holder.style.overflowY = "scroll" //点开图片后可以上下滑动
         holder.style.scrollBehavior = "smooth"
 
