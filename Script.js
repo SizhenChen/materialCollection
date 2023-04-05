@@ -448,7 +448,7 @@ hideSelect.innerHTML = "BACK"
 hideSelect.style.fontFamily = "FolioBC, sans-serif"
 hideSelect.style.fontSize = "2vw"
 hideSelect.style.color = "black"
-hideSelect.style.marginTop = "5vh"
+hideSelect.style.marginTop = "15vh"
 hideSelect.style.marginBottom = "4vh"
 
 hideSelect.addEventListener("mouseover", () => {
@@ -462,6 +462,9 @@ hideSelect.addEventListener("mouseout", () => {
 
 hideSelect.addEventListener("click", () => {
     holder2.style.display = "none"
+    holder.style.width = "100%"
+    holder.style.marginLeft = "0vw"
+
 })
 
 holder2.append(hideSelect)
@@ -495,12 +498,14 @@ for (let k = 0; k < Items.length; k++) {
             }
         }
 
-        holder2.style.width = "1000px"
-        holder2.style.marginRight = "15vw"
-        holder.style.marginRight = "5vw"
+        holder.style.width = "500px"
+        holder.style.marginLeft = "6vw"
+
+        holder.style.marginRight = "8vw"
+        holder2.style.marginRight = "6vw"
 
         if (window.matchMedia("(max-width: 700px)").matches) {
-            holder2.style.marginLeft = "15vw"
+            holder2.style.marginLeft = "6vw"
         }
 
         holder.style.height = "1900px"
